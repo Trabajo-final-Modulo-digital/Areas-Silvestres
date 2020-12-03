@@ -27,19 +27,19 @@ Otra cosa que deberías rescatar de tu fanzine son las tipografías, usando http
 
 
 body{
-    background:var(--tercercolor);
+    background:var(--colorclaro);
     color:var(--coloroscuro);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400px;
 }
 
 a{
-    color:var(--colorclaro);
+    color:var(--segundocolor);
     text-decoration: underline;
 }
 
 a:hover{
-    color:var(--colorclaro);
+    color:var(--primercolor);
     text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ De tal manera podría "fundirse" con el color de fondo, ofreciendo continuidad, 
 ------------------------------------------------------------------------------------------------- */
 
 header{
-    background-color:var(--segundocolor);
+    background-color:var(--colorclaro);
     background-image:url('img/wireframe-aspect_ratio-1-1.png');
     background-position: center top;
     background-repeat: no-repeat;
