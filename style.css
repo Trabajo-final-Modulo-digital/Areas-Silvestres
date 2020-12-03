@@ -65,7 +65,7 @@ header{
     background-position: center top;
     background-repeat: no-repeat;
     background-size:100% auto;
-    color:var(--colorclaro);
+    color:var(--coloroscuro);
 }
 
 @media (min-width: 576px) { 
