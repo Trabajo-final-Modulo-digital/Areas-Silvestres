@@ -5,7 +5,7 @@ Lo primero es definir tres colores, los que deberían coincidir con los utilizad
 ------------------------------------------------------------------------------------------------- */
 
 :root {
-  --primercolor: #FFC658; 
+  --primercolor: #666; 
   --segundocolor: #666; /* menos luminoso */
   --tercercolor: #aaa; /* más luminoso */
   --colorclaro: rgba(245,100,200,0.8);
@@ -29,7 +29,7 @@ Otra cosa que deberías rescatar de tu fanzine son las tipografías, usando http
 body{
     background:var(--segundocolor);
     color:var(--colorclaro);
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Gamja Flower', sans-serif;
     font-weight: 400;
 }
 
