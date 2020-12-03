@@ -29,7 +29,7 @@ Otra cosa que deberías rescatar de tu fanzine son las tipografías, usando http
 body{
     background:var(--segundocolor);
     color:var(--colorclaro);
-    font-family: 'Gamja Flower', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
