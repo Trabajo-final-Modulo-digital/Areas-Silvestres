@@ -96,7 +96,7 @@ Con tales colores, la imagen sirve de transición a la parte que ofrece más inf
 ------------------------------------------------------------------------------------------------- */
 
 main{
-    background-image:url('img/wireframe-aspect_ratio-4-1.png');
+    background-image:url('img/Untitled_Artwork 20.png');
     background-position: left bottom;
     background-repeat: repeat-x;
     background-size:100% auto;
@@ -117,7 +117,7 @@ footer{
 
 footer a{
     text-decoration: none;
-    color:var(--segundcolor);
+    color:var(--primercolor);
 }
 
 footer a:hover{
