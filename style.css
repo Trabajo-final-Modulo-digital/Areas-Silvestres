@@ -108,7 +108,7 @@ main{
 
 aside{
     background:var(--tercercolor);
-    color:var(--coloroscuro);
+    color:var(--segundocolor);
 }
 
 footer{
@@ -122,7 +122,7 @@ footer a{
 
 footer a:hover{
     text-decoration: none;
-    color:var(--coloroscuro);
+    color:var(--segundocolor);
 }
 
 /* ----------------------------------------- IMPORTANTE -----------------------------------------
