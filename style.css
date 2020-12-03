@@ -6,9 +6,9 @@ Lo primero es definir tres colores, los que deberían coincidir con los utilizad
 
 :root {
   --primercolor: #666; 
-  --segundocolor: #666; /* menos luminoso */
+  --segundocolor: #ffffff; /* menos luminoso */
   --tercercolor: #aaa; /* más luminoso */
-  --colorclaro: rgba(245,100,200,0.8);
+  --colorclaro: rgba(60,131,120,0.8);
   --coloroscuro: rgba(0,0,0,0.8);
 }
 
@@ -31,7 +31,6 @@ body{
     color:var(--colorclaro);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 200 px;
 }
 
 a{
