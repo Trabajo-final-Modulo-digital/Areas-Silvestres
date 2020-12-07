@@ -69,15 +69,15 @@ header{
 }
 
 @media (min-width: 576px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-4-3.png');}
+    header{background-image:url('img/Header_4-3.png');}
 }
 
 @media (min-width: 768px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-16-9.png');}
+    header{background-image:url('img/Header_16-9.png');}
 }
 
 @media (min-width: 992px) { 
-    header{background-image:url('img/wireframe-aspect_ratio-2.75-1.png');}
+    header{background-image:url('img/Header_2.75-1.png');}
 }
 
 
@@ -107,7 +107,7 @@ main{
 }
 
 aside{
-    background:var(--primercolor);
+    background:var(--colorclaro);
     color:var(--segundocolor);
 }
 
