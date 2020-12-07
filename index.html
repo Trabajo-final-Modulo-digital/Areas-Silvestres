@@ -237,6 +237,7 @@
             var box = document.querySelector("#p5");
             var w = box.clientWidth;
             var h = (w / 16) * 9;
+	var mensaje = hola
             // defino una altura
             box.style.color = h + "px";
             // en caso quieran asomarse a la consola
@@ -251,12 +252,12 @@
             function draw() {
                 background(200);
                 fill(0);
-                rect(mouseX, mouseY, 50, 50);
+                text(mensaje, mouseX, mouseY, 50, 50);
             }
 	
 		 function draw() {
        
-                rect(mouseX, mouseY, 50, 50);
+                text(mensaje, mouseX, mouseY, 50, 50);
             }
 	
 
