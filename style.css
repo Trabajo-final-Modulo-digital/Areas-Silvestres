@@ -7,7 +7,7 @@ Lo primero es definir tres colores, los que deberían coincidir con los utilizad
 :root {
   --primercolor: #8784d1; 
   --segundocolor: #f7ad48; /* menos luminoso */
-  --tercercolor: #fffffff; /* más luminoso */
+  --tercercolor: #1E5247; /* más luminoso */
   --colorclaro: rgba(255,255,255,0.8);
   --coloroscuro: rgba(34,99,89,0.8);
 }
@@ -107,7 +107,7 @@ main{
 }
 
 aside{
-    background:var(--coloroscuro);
+    background:var(--tercercolor);
     color:var(--segundocolor);
 }
 
