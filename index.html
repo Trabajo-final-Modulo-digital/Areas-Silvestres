@@ -233,30 +233,50 @@
         <!--JavaScript para el <canvas></canvas>, simplificado con p5.js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>
         <script>
-            // parto creando tres variables
-            var box = document.querySelector("#p5");
-            var w = box.clientWidth;
-            var h = (w / 16) * 9;
-            // defino una altura
-            box.style.color = h + "px";
-            // en caso quieran asomarse a la consola
-            console.log(w);
-            console.log(h);
-            // comenzamos con p5.js
-            function setup() {
-                var canvas = createCanvas(w, h);
-                canvas.parent("#p5");
-            }
+            let message = 'tickle',
+  font,
+  bounds, // almacena  la posición, ancho y alto de la caja contenedora del texto
+  fontsize = 60,
+  x,
+  y; // coordenadas x e y del texto
 
-            function draw() {
-                background(200);
-                fill(0);
-                ellipse(mouseX, mouseY, 50, 50);
-            }
+function preload() {
+  font = loadFont('assets/SourceSansPro-Regular.otf');
+}
 
-            function windowResized() {
-                resizeCanvas(w, h);
-            }
+function setup() {
+  createCanvas(710, 400);
+
+  // definir la fuente del texto
+  textFont(font);
+  textSize(fontsize);
+
+  // obtener ancho y alto del texto para centrarlo inicialmente
+  bounds = font.textBounds(message, 0, 0, fontsize);
+  x = width / 2 - bounds.w / 2;
+  y = height / 2 - bounds.h / 2;
+}
+
+function draw() {
+  background(204, 120);
+
+  // escribir el texto con negro y obtener su caja contenedora
+  fill(0);
+  text(message, x, y);
+  bounds = font.textBounds(message, x, y, fontsize);
+
+  // revisar si el ratón está dentro de la caja contenedora y moverse si es así
+  if (
+    mouseX >= bounds.x &&
+    mouseX <= bounds.x + bounds.w &&
+    mouseY >= bounds.y &&
+    mouseY <= bounds.y + bounds.h
+  ) {
+    x += random(-5, 5);
+    y += random(-5, 5);
+  }
+}
+           
         </script>
         <!--JavaScript para los 286 feather icons - https://feathericons.com/-->
         <script src="https://unpkg.com/feather-icons"></script>
