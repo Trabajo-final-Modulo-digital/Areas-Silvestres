@@ -27,7 +27,7 @@ Otra cosa que deberías rescatar de tu fanzine son las tipografías, usando http
 
 
 body{
-    background:var(--colorclaro);
+    background:var(--coloroscuro);
     color:var(--coloroscuro);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400px;
@@ -60,12 +60,12 @@ De tal manera podría "fundirse" con el color de fondo, ofreciendo continuidad, 
 ------------------------------------------------------------------------------------------------- */
 
 header{
-    background-color:var(--colorclaro);
+    background-color:var(--coloroscuro);
     background-image:url('img/wireframe-aspect_ratio-1-1.png');
     background-position: center top;
     background-repeat: no-repeat;
     background-size:100% auto;
-    color:var(--coloroscuro);
+    color:var(--coloroclaro);
 }
 
 @media (min-width: 576px) { 
@@ -107,7 +107,7 @@ main{
 }
 
 aside{
-    background:var(--tercercolor);
+    background:var(--segundocolor);
     color:var(--segundocolor);
 }
 
