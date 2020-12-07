@@ -27,7 +27,7 @@ Otra cosa que deberías rescatar de tu fanzine son las tipografías, usando http
 
 
 body{
-    background:var(--coloroscuro);
+    background:var(--tercercolor);
     color:var(--colorclaro);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400px;
@@ -97,7 +97,7 @@ Con tales colores, la imagen sirve de transición a la parte que ofrece más inf
 
 main{
     background-image:url('');
-    background-position: left bottom;
+    background-position: center bottom;
     background-repeat: repeat-x;
     background-size:100% auto;
 }
