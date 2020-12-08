@@ -96,7 +96,7 @@ Con tales colores, la imagen sirve de transición a la parte que ofrece más inf
 ------------------------------------------------------------------------------------------------- */
 
 main{
-    background-image:url('img/');
+    background-image:url('img/imagen-fondo.png');
     background-position: center bottom;
     background-repeat: repeat-x;
     background-size:100% auto;
