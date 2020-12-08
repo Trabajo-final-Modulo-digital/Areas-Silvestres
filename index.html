@@ -143,9 +143,9 @@
                     <div class="row py-5 align-items-center">
                         <div class="col-md-6 col-lg-7 order-sm-last"><div id="p5"></div></div>
                         <div class="col-md-6 col-lg-5 p-4 text-md-right order-sm-first">
-                            <h3><i data-feather="thumbs-up"></i> Este subtítulo tiene que comentar un canvas</h3>
+                            <h3><i data-feather="thumbs-up"></i> Experimentación con canvas</h3>
                             <p>
-                                Canvas también nos permite dibujar con texto. Pero aquí tenemos un elemento de HTML cuyas dimensiones no se ajustan automáticamente, y dentro del cual se programan gráficos tipo bitmap, generalmente, con JavaScript.
+                                Le hicimos pequeñas modificaciones al codigo ya existente.
                             </p>
                             <p class="small d-none d-lg-block">
                                 En este caso, se recomienda utilizar <a href="https://p5js.org/es/">p5.js</a>, una biblioteca de JavaScript que reformula Processing (que está basado en Java), y les puede permitir introducirse a un lenguaje de programación.
@@ -252,12 +252,12 @@
 		background(200);
                 fill(random(255),random(255),random(255));
 		noStroke();
-                ellipse(mouseX, mouseY, 20, 20);
+                ellipse(mouseX, mouseY, 20, 20,10,10);
             }
 		  function draw() {
 	       fill(random(255),random(255),random(255));	
                noStroke();
-                ellipse(mouseX, mouseY, 20, 20);
+                ellipse(mouseX, mouseY, 20, 20,10,10);
             }
 
             function windowResized() {
