@@ -176,8 +176,40 @@
             </div>
         </div>
         <!--JavaScript para el <canvas></canvas>, simplificado con p5.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>
         <script>
+        // parto creando tres variables
+            var box = document.querySelector("#p5");
+            var w = box.clientWidth;
+            var h = (w / 16) * 9;
+            // defino una altura
+            box.style.color = h + "px";
+            // en caso quieran asomarse a la consola
+            console.log(w);
+            console.log(h);
+            // comenzamos con p5.js
+            function setup() {
+                var canvas = createCanvas(w, h);
+                canvas.parent("#p5");
+            }
+
+            function draw() {
+		background(200);
+                fill(random(255),random(255),random(255));
+		noStroke();
+                ellipse(mouseX, mouseY, 20, 20);
+            }
+		  function draw() {
+	       fill(random(255),random(255),random(255));	
+               noStroke();
+                ellipse(mouseX, mouseY, 20, 20);
+            }
+
+            function windowResized() {
+                resizeCanvas(w, h);
+            }
+           
+        </script>
             // Saltémonos esto a nivel de "skeleton"
         </script>
         <!--JavaScript para los 286 feather icons - https://feathericons.com/-->
